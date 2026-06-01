@@ -20,7 +20,6 @@ const SearchParams = () => {
 
   const result = useQuery(["Search", requestParams], fetchSearch);
   const pets = result?.data?.pets ?? [];
-
   // useEffect(() => {
   //   requestPet();
   // }, []); // eslint-disable-next-line react-hooks/exhaustive-deps
